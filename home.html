@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind css  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <section class="flex justify-center mt-10">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-3">
+                    <!-- stat  -->
+                    <div class="stats shadow">
+                        <div class="stat">
+                          <div class="stat-title text-center">Balance</div>
+                          <div id="balance" class="stat-value">9400</div>
+                        </div>
+                      </div>
+                      <!-- end stat  -->
+                       <!-- switch button  -->
+                        <div class="divider"></div>
+                        <div class="flex gap-4 mb-8 text-white">
+                            <button id="add-btn-money" class="bg-red-500 p-3 px-4 rounded-lg">Add Money</button>
+                        <button id="cash-out-btn" class="bg-red-500 p-3 px-4 rounded-lg">Cash Out</button>
+                        <button id="transsition" class="bg-red-500 p-3 px-4 rounded-lg">Transectioin</button>
+                        </div>
+                       <!-- login form  -->
+                       <div id="login-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Add Money</span>
+                            </label>
+                            <input id="add-money" type="number" placeholder="Add Money" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add-btn" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- cash out form  -->
+                      <div id="login-cash" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Cash Out</span>
+                            </label>
+                            <input id="cash-out-money" type="number" placeholder="Cash Out" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">PIN</span>
+                            </label>
+                            <input id="pin-cash-out" type="password" placeholder="PIN" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cash" class="btn btn-primary">Cash OUT</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- end  -->
+                       <!-- transectioin  -->
+                       <div id="trans" class="hidden">
+                          <h2 class="text-3xl">transectioin</h2>
+                       </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    
+ <!-- script  -->    
+    <script src="home2.js"></script>
+    <script src="home.js"></script>
+    <script src="cash.js"></script>
+    <script src="show.js"></script>
+</body>
+</html>
